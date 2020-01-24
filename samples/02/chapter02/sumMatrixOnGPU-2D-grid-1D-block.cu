@@ -167,7 +167,8 @@ int main(int argc, char **argv)
     CHECK(cudaMemcpy(d_MatB, h_B, nBytes, cudaMemcpyHostToDevice));
 
     // invoke kernel at host side
-    int dimx = 32;
+    // int dimx = 32;
+    int dimx = 512;
     dim3 block(dimx);
     dim3 grid((nx + block.x - 1) / block.x, ny);
 

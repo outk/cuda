@@ -1,4 +1,4 @@
-#include "../common/common.h"
+#include "../../01/common/common_vc.h"
 #include <cuda_runtime.h>
 #include <stdio.h>
 
